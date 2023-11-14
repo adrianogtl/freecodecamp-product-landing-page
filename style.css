@@ -2,9 +2,6 @@
 :root {
   --color1: #fff;
   --color2: #00008b;
-  --oceanColor: #2196F3;
-  /* #2196F3 */
-  /* #00008b */
 }
 
 * {
@@ -48,9 +45,10 @@ body {
   padding-top: 1rem;
   color: var(--color1);
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .material-symbols-rounded {
@@ -82,10 +80,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-decoration: none;
-}
-
-.waves-top {
-  
+  text-transform: uppercase;
 }
 
 /* Content */
@@ -97,18 +92,19 @@ section {
 h2 {
   margin-bottom: 1rem;
   font-family: 'Inter', sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  text-transform: uppercase;
   text-decoration: underline;
   text-decoration-color: var(--color2);
   text-underline-offset: 0.8rem;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   font-weight: 800;
   padding-bottom: 1rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .text {
@@ -122,6 +118,53 @@ h3 {
   text-align: justify;
 }
 
+.bold {
+  font-weight: 800;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.link {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+/* About */
+iframe {
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* Features */
+.features-div {
+  margin-top: 3rem;
+}
+
+.features-title {
+  color: var(--color2);
+  text-align: left;
+}
+
+/* Features Icons */
+.features-title::after {
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.partnership::after {
+  content: url(assets/partner30.png);
+}
+
+.satisfaction::after {
+  content: url(assets/thumbs-up30.png);
+}
+
+.journey::after {
+  content: url(assets/ship30.png);
+}
 /* Pricing */
 .place-container {
   margin: 3rem 0;
@@ -136,39 +179,42 @@ h3 {
   height: 500px;
   text-align: center;
   color: var(--color1);
-  background-color: var(--color2);
-  border-radius: 16px;
-}
-
-.place-price {
-  font-weight: 800;
 }
 
 .place-image {
   width: 100%;
-  height: 50%;
+  height: 60%;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-clip: border-box;
   background-attachment: fixed;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
 
 .bahamas {
-  background: url(assets/bahamas.jpg);
+  background: url(assets/bahamas640.jpg);
 }
 .maldives {
-  background: url(assets/maldives.jpg);
+  background: url(assets/maldives640.jpg);
 }
 .okinawa {
-  background: url(assets/okinawa.jpg);
+  background: url(assets/okinawa640.jpg);
 }
 
 .place-text {
   padding: 1rem 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  background-color: var(--color2);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
+
+.place-price {
+  padding-top: 1rem;
+}
+
 /* Form */
 #form #email, #submit {
   border-radius: .5rem;
@@ -206,6 +252,7 @@ button {
   vertical-align: middle;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 #send-icon {
@@ -223,32 +270,30 @@ button {
   background-color: var(--color2);
 }
 
-.copyright {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
+.social-media ion-icon,
+#send-icon {
+  margin-right: 1rem;
+  color: var(--color1);
+  font-size: 2.5rem;
 }
 
-.footer-bottom {
+.footer-top {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
+.footer-bottom {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
 .footer-link {
   display: block;
-  color: var(--color1);
-  font-size: 1.3rem;
   margin-bottom: 1rem;
-
-  text-decoration: none;
-}
-
-.social-media {
-}
-
-ion-icon {
-  margin-right: 1rem;
-  color: var(--color1);
-  font-size: 2.5rem;
+  font-size: 1.3rem;
 }

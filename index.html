@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <title>BlueTravel</title>
+  <title>Blue Travel</title>
   <link rel="stylesheet" href="style.css">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,9 @@
 <body>
   <header id="header">
     <div id="head">
-      <!-- <div id="logo-container"> -->
+      <div id="logo-container">
       <img src="assets/logo.png" alt="" width="50" height="50" id="header-img">
-      <!-- </div> -->
+      </div>
       <h1 class="header-title">Blue Travel</h1>
       <a href="javascript:void(0);" onclick="navMenu()">
         <span class="material-symbols-rounded">menu</span>
@@ -32,41 +32,12 @@
     </nav>
   </header>
   <div class="waves-top">
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"
       class="transition duration-300 ease-in-out delay-150">
-      <style>
-        .path-0 {
-          animation: pathAnim-0 4s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-        }
-    
-        @keyframes pathAnim-0 {
-          0% {
-            d: path("M 0,500 C 0,500 0,250 0,250 C 258.5,296 517,342 757,342 C 997,342 1218.5,296 1440,250 C 1440,250 1440,500 1440,500 Z");
-          }
-    
-          25% {
-            d: path("M 0,500 C 0,500 0,250 0,250 C 288.5,286 577,322 817,322 C 1057,322 1248.5,286 1440,250 C 1440,250 1440,500 1440,500 Z");
-          }
-    
-          50% {
-            d: path("M 0,500 C 0,500 0,250 0,250 C 183,257.5 366,265 606,265 C 846,265 1143,257.5 1440,250 C 1440,250 1440,500 1440,500 Z");
-          }
-    
-          75% {
-            d: path("M 0,500 C 0,500 0,250 0,250 C 284.5,207.5 569,165 809,165 C 1049,165 1244.5,207.5 1440,250 C 1440,250 1440,500 1440,500 Z");
-          }
-    
-          100% {
-            d: path("M 0,500 C 0,500 0,250 0,250 C 258.5,296 517,342 757,342 C 997,342 1218.5,296 1440,250 C 1440,250 1440,500 1440,500 Z");
-          }
-        }
-      </style>
       <path
-        d="M 0,500 C 0,500 0,250 0,250 C 258.5,296 517,342 757,342 C 997,342 1218.5,296 1440,250 C 1440,250 1440,500 1440,500 Z"
-        stroke="none" stroke-width="0" fill="var(--color2)" fill-opacity="1"
-        class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)"></path>
+        d="M 0,400 C 0,400 0,200 0,200 C 205.71428571428572,257.14285714285717 822.8571428571429,228.57142857142858 1440,200 C 1440,200 1440,400 1440,400 Z"
+        stroke="none" stroke-width="0" fill="#00008b" fill-opacity="1"
+        class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path>
     </svg>
   </div>
   <section>
@@ -76,24 +47,37 @@
       Welcome to Blue Travel, where the journey begins and memories last a lifetime! As a premier travel agency
       dedicated to crafting unforgettable experiences, we take pride in turning your travel dreams into reality.
     </p>
-    <iframe src="" frameborder="0" id="video"></iframe>
+    <iframe id="video" width="300" height="315"
+      src="https://www.youtube-nocookie.com/embed/4XeNRxrjJfw?si=RbJ9q9NqRKI-54m3&amp;controls=0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
   </section>
   <section>
     <h2 id="features">Features</h2>
-    <p class="text">
-      Our extensive network of partnerships with top airlines, hotels, and tour operators ensures that you receive the best
-      value for your investment. We strive to make travel accessible to all, offering a range of options from budget-friendly
-      getaways to luxurious escapes.
-    </p>
-    <p class="text">
-      Customer satisfaction is at the heart of our mission. From the moment you connect with us to the day you return home,
-      our dedicated team is here to assist you at every step. We believe in providing not just a service, but an experience
-      that exceeds your expectations.
-    </p>
-    <p class="text">
-      Embark on a journey with Blue Travel, and let us handle the details while you focus on creating memories.
-      Your adventure awaits, and we're here to make it extraordinary. Discover the world with confidence – travel with us!
-    </p>
+    <div class="features-div">
+      <h3 class="features-title partnership">Partnership</h3>
+      <p class="text">
+        Our extensive network of partnerships with top airlines, hotels, and tour operators ensures that you receive the best
+        value for your investment. We strive to make travel accessible to all, offering a range of options from budget-friendly
+        getaways to luxurious escapes.
+      </p>
+    </div>
+    <div class="features-div">
+      <h3 class="features-title satisfaction">Satisfaction</h3>
+      <p class="text">
+        Customer satisfaction is at the heart of our mission. From the moment you connect with us to the day you return home,
+        our dedicated team is here to assist you at every step. We believe in providing not just a service, but an experience
+        that exceeds your expectations.
+      </p>
+    </div>
+    <div class="features-div">
+      <h3 class="features-title journey">Journey</h3>
+      <p class="text">
+        Embark on a journey with Blue Travel, and let us handle the details while you focus on creating memories.
+        Your adventure awaits, and we're here to make it extraordinary. Discover the world with confidence, travel with us!
+      </p>
+    </div>
   </section>
   <section>
     <h2 id="pricing">Pricing</h2>
@@ -102,27 +86,25 @@
         <div class="place-image bahamas"></div>
         <div class="place-text">
           <h3 class="place-title">The Bahamas</h3>
-          <p class="text">Lorem ipsum dolor sit amet</p>
-          <p class="text">Lorem ipsum dolor sit amet</p>
-          <p class="text">from <span class="place-price">$900.00</span></p>
+          <p>Escape to paradise in the breathtaking Bahamas! Immerse yourself in the turquoise waters of the Atlantic Ocean!</p>
+          <p class="place-price">From <span class="bold">$899.00</span></p>
         </div>
       </div>
       <div class="place-item">
         <div class="place-image maldives"></div>
         <div class="place-text">
-          <h3 class="place-title">Maldives</h3>
-          <p class="text">Lorem ipsum dolor sit amet</p>
-          <p class="text">Lorem ipsum dolor sit amet</p>
-          <p class="text">from <span class="place-price">$750.00</span></p>
+          <h3>Maldives</h3>
+          <p>Embark on an enchanting journey to the Maldives, where turquoise waters and powder-soft white sands create a dreamlike
+          destination.</p>
+          <p class="place-price">From <span class="bold">$749.00</span></p>
         </div>
       </div>
       <div class="place-item">
         <div class="place-image okinawa"></div>
         <div class="place-text">
-          <h3 class="place-title">Okinawa</h3>
-          <p class="text">Lorem ipsum dolor sit amet</p>
-          <p class="text">Lorem ipsum dolor sit amet</p>
-          <p class="text">from <span class="place-price">$600.00</span></p>
+          <h3>Okinawa</h3>
+          <p>Discover the allure of Okinawa, where ancient traditions meet modern luxury in a stunning tropical setting.</p>
+          <p class="place-price">From <span class="bold">$599.00</span></p>
         </div>
       </div>
     </div>
@@ -131,10 +113,9 @@
     <div id="email-container">
       <h3>Subscribe our newsletter!</h3>
       <input type="email" id="email" placeholder="Enter your email address" autocomplete="autocomplete">
-      <button type="button">
+      <button type="submit" id="submit">
         <ion-icon name="arrow-forward-outline" id="send-icon"></ion-icon>
       </button>
-      <!-- <input type="submit" value="Send" id="submit"> -->
     </div>
   </form>
   <div class="waves-bottom">
@@ -176,14 +157,13 @@
     </svg>
 </div>
 <footer id="footer">
-  <p class="copyright">All Rights Reserved &copy; 2023</p>
-  <div class="footer-bottom">
+  <div class="footer-top">
     <div class="links">
-      <a href="#" class="footer-link">Refund Policy</a>
-      <a href="#" class="footer-link">Privacy Policy</a>
-      <a href="#" class="footer-link">Terms and Conditions</a>
+      <a href="#" class="link footer-link bold">Refund Policy</a>
+      <a href="#" class="link footer-link bold">Privacy Policy</a>
+      <a href="#" class="link footer-link bold">Terms and Conditions</a>
     </div>
-    <div class="social-media top">
+    <div class="social-media">
       <a href="#">
         <ion-icon name="logo-facebook"></ion-icon>
       </a>
@@ -197,6 +177,13 @@
         <ion-icon name="logo-youtube"></ion-icon>
       </a>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="copyright">All Rights Reserved <span class="bold">&copy;</span> 2023</p>
+    <p class="copyright">Icons by <a target="_blank" href="https://icons8.com" class="link bold">Icons8</a>,
+      <a target="_blank" href="#" class="link bold">Google Icons</a> and 
+      <a target="_blank" href="https://icons8.com" class="link bold">IonIcon</a>
+    </p>
   </div>
 </footer>
 <script src="script.js"></script>
