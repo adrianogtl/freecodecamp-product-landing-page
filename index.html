@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>BlueTravel</title>
   <link rel="stylesheet" href="style.css">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,64 +18,126 @@
   <header id="header">
     <div id="head">
       <!-- <div id="logo-container"> -->
-      <img src="https://fakeimg.pl/50/" alt="logo" id="header-img">
+      <img src="assets/logo.png" alt="" width="50" height="50" id="header-img">
       <!-- </div> -->
-      <h1 class="header-title">Product</h1>
+      <h1 class="header-title">Blue Travel</h1>
       <a href="javascript:void(0);" onclick="navMenu()">
         <span class="material-symbols-rounded">menu</span>
       </a>
     </div>
     <nav id="nav-bar">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#features" class="nav-link">Features</a>
-      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#features" class="nav-link">Our Service</a>
+      <a href="#pricing" class="nav-link">Top Destinations</a>
     </nav>
   </header>
+  <div class="waves-top">
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
+      class="transition duration-300 ease-in-out delay-150">
+      <style>
+        .path-0 {
+          animation: pathAnim-0 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+    
+        @keyframes pathAnim-0 {
+          0% {
+            d: path("M 0,500 C 0,500 0,250 0,250 C 258.5,296 517,342 757,342 C 997,342 1218.5,296 1440,250 C 1440,250 1440,500 1440,500 Z");
+          }
+    
+          25% {
+            d: path("M 0,500 C 0,500 0,250 0,250 C 288.5,286 577,322 817,322 C 1057,322 1248.5,286 1440,250 C 1440,250 1440,500 1440,500 Z");
+          }
+    
+          50% {
+            d: path("M 0,500 C 0,500 0,250 0,250 C 183,257.5 366,265 606,265 C 846,265 1143,257.5 1440,250 C 1440,250 1440,500 1440,500 Z");
+          }
+    
+          75% {
+            d: path("M 0,500 C 0,500 0,250 0,250 C 284.5,207.5 569,165 809,165 C 1049,165 1244.5,207.5 1440,250 C 1440,250 1440,500 1440,500 Z");
+          }
+    
+          100% {
+            d: path("M 0,500 C 0,500 0,250 0,250 C 258.5,296 517,342 757,342 C 997,342 1218.5,296 1440,250 C 1440,250 1440,500 1440,500 Z");
+          }
+        }
+      </style>
+      <path
+        d="M 0,500 C 0,500 0,250 0,250 C 258.5,296 517,342 757,342 C 997,342 1218.5,296 1440,250 C 1440,250 1440,500 1440,500 Z"
+        stroke="none" stroke-width="0" fill="var(--color2)" fill-opacity="1"
+        class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)"></path>
+    </svg>
+  </div>
   <section>
     <h2 id="about">About</h2>
 
     <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi neque harum, sint est animi culpa fugit hic sit necessitatibus sed iusto facilis ipsa odit, sunt modi qui dolorum nisi? Qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae tenetur, iure eligendi asperiores non! Pariatur, aspernatur sint error sed quisquam eos obcaecati ratione excepturi qui vel autem, eius commodi?
+      Welcome to Blue Travel, where the journey begins and memories last a lifetime! As a premier travel agency
+      dedicated to crafting unforgettable experiences, we take pride in turning your travel dreams into reality.
     </p>
     <iframe src="" frameborder="0" id="video"></iframe>
   </section>
   <section>
     <h2 id="features">Features</h2>
     <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi neque harum, sint est animi culpa fugit hic sit
-      necessitatibus sed iusto facilis ipsa odit, sunt modi qui dolorum nisi? Qui. Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Nulla quae tenetur, iure eligendi asperiores non! Pariatur, aspernatur sint error sed quisquam eos
-      obcaecati ratione excepturi qui vel autem, eius commodi?
+      Our extensive network of partnerships with top airlines, hotels, and tour operators ensures that you receive the best
+      value for your investment. We strive to make travel accessible to all, offering a range of options from budget-friendly
+      getaways to luxurious escapes.
+    </p>
+    <p class="text">
+      Customer satisfaction is at the heart of our mission. From the moment you connect with us to the day you return home,
+      our dedicated team is here to assist you at every step. We believe in providing not just a service, but an experience
+      that exceeds your expectations.
+    </p>
+    <p class="text">
+      Embark on a journey with Blue Travel, and let us handle the details while you focus on creating memories.
+      Your adventure awaits, and we're here to make it extraordinary. Discover the world with confidence – travel with us!
     </p>
   </section>
   <section>
     <h2 id="pricing">Pricing</h2>
-    <div class="price-container">
-      <div class="price-item">
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text price-value">$00.00</p>
+    <div class="place-container">
+      <div class="place-item">
+        <div class="place-image bahamas"></div>
+        <div class="place-text">
+          <h3 class="place-title">The Bahamas</h3>
+          <p class="text">Lorem ipsum dolor sit amet</p>
+          <p class="text">Lorem ipsum dolor sit amet</p>
+          <p class="text">from <span class="place-price">$900.00</span></p>
+        </div>
       </div>
-      <div class="price-item">
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text price-value">$00.00</p>
+      <div class="place-item">
+        <div class="place-image maldives"></div>
+        <div class="place-text">
+          <h3 class="place-title">Maldives</h3>
+          <p class="text">Lorem ipsum dolor sit amet</p>
+          <p class="text">Lorem ipsum dolor sit amet</p>
+          <p class="text">from <span class="place-price">$750.00</span></p>
+        </div>
       </div>
-      <div class="price-item">
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text">Lorem ipsum dolor sit amet</p>
-        <p class="text price-value">$00.00</p>
+      <div class="place-item">
+        <div class="place-image okinawa"></div>
+        <div class="place-text">
+          <h3 class="place-title">Okinawa</h3>
+          <p class="text">Lorem ipsum dolor sit amet</p>
+          <p class="text">Lorem ipsum dolor sit amet</p>
+          <p class="text">from <span class="place-price">$600.00</span></p>
+        </div>
       </div>
     </div>
   </section>
   <form action="https://www.freecodecamp.com/email-submit" id="form">
-    <input type="email" id="email" placeholder="Enter your email address">
-    <input type="submit" value="Submit" id="submit">
+    <div id="email-container">
+      <h3>Subscribe our newsletter!</h3>
+      <input type="email" id="email" placeholder="Enter your email address" autocomplete="autocomplete">
+      <button type="button">
+        <ion-icon name="arrow-forward-outline" id="send-icon"></ion-icon>
+      </button>
+      <!-- <input type="submit" value="Send" id="submit"> -->
+    </div>
   </form>
-  <div class="waves">
+  <div class="waves-bottom">
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"
       class="transition duration-300 ease-in-out delay-150" style="display: block;">
       <style>
@@ -113,18 +176,27 @@
     </svg>
 </div>
 <footer id="footer">
-  <div class="links">
-    <a href="#" class="footer-link">Refund Policy</a>
-    <a href="#" class="footer-link">Privacy Policy</a>
-    <a href="#" class="footer-link">Terms and Conditions</a>
-  </div>
-  <div class="social-media top">
-    <ion-icon name="logo-instagram"></ion-icon>
-    <ion-icon name="logo-tiktok"></ion-icon>
-  </div>
-  <div class="social-media top">
-    <ion-icon name="logo-facebook"></ion-icon>
-    <ion-icon name="logo-youtube"></ion-icon>
+  <p class="copyright">All Rights Reserved &copy; 2023</p>
+  <div class="footer-bottom">
+    <div class="links">
+      <a href="#" class="footer-link">Refund Policy</a>
+      <a href="#" class="footer-link">Privacy Policy</a>
+      <a href="#" class="footer-link">Terms and Conditions</a>
+    </div>
+    <div class="social-media top">
+      <a href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-tiktok"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+    </div>
   </div>
 </footer>
 <script src="script.js"></script>

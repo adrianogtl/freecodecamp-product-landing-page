@@ -1,8 +1,10 @@
 /* Global */
 :root {
   --color1: #fff;
-  --color2: #252525;
-  --color3: #00008b;
+  --color2: #00008b;
+  --oceanColor: #2196F3;
+  /* #2196F3 */
+  /* #00008b */
 }
 
 * {
@@ -45,10 +47,10 @@ body {
 .header-title {
   padding-top: 1rem;
   color: var(--color1);
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
+  text-align: center;
 }
 
 .material-symbols-rounded {
@@ -82,6 +84,10 @@ body {
   text-decoration: none;
 }
 
+.waves-top {
+  
+}
+
 /* Content */
 section {
   width: 100%;
@@ -91,21 +97,33 @@ section {
 h2 {
   margin-bottom: 1rem;
   font-family: 'Inter', sans-serif;
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: 400;
+  text-transform: uppercase;
   text-decoration: underline;
+  text-decoration-color: var(--color2);
   text-underline-offset: 0.8rem;
 }
 
+h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
 .text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
   margin-bottom: .5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+  word-spacing: .2rem;
+  text-align: justify;
 }
 
 /* Pricing */
-.price-container {
+.place-container {
   margin: 3rem 0;
   display: grid;
   grid-auto-columns: auto;
@@ -113,21 +131,46 @@ h2 {
   gap: 1rem;
 }
 
-.price-item {
-  margin: 1rem 0;
-  padding: 1rem;
+.place-item {
+  margin-bottom: 1rem;
+  height: 500px;
   text-align: center;
   color: var(--color1);
   background-color: var(--color2);
+  border-radius: 16px;
 }
 
-.price-value {
+.place-price {
   font-weight: 800;
 }
 
+.place-image {
+  width: 100%;
+  height: 50%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-attachment: fixed;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.bahamas {
+  background: url(assets/bahamas.jpg);
+}
+.maldives {
+  background: url(assets/maldives.jpg);
+}
+.okinawa {
+  background: url(assets/okinawa.jpg);
+}
+
+.place-text {
+  padding: 1rem 3rem;
+}
 /* Form */
 #form #email, #submit {
-  display: block;
   border-radius: .5rem;
   border: none;
 }
@@ -136,39 +179,60 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 2rem;
   background-color: var(--color2);
   font-family: 'Open Sans', sans-serif;
 }
 
+#email-container{
+  color: var(--color1);
+  text-align: center;
+}
+
 #email {
+  display: inline-block;
   width: 100%;
+  width: 80%;
   height: 2rem;
-  margin-bottom: 1rem;
+  margin: .5rem 0;
   padding: 2rem 1rem;
   border: none;
 }
 
+button {
+  margin: .5rem;
+  vertical-align: middle;
+  background: none;
+  border: none;
+}
 
-#submit {
-  padding: 1rem;
+#send-icon {
+  line-height: 2rem;
 }
 
 /* Footer */
-.waves {
-  position: static;
+.waves-bottom {
   bottom: 0;
 }
 
 #footer {
-  display: flex;
-  justify-content: center;
-  height: 10rem;
-  /* text-align: center; */
+  height: auto;
   color: var(--color1);
   background-color: var(--color2);
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .footer-link {
@@ -181,9 +245,10 @@ h2 {
 }
 
 .social-media {
-  width: 60px;
 }
 
 ion-icon {
-  font-size: 3rem;
+  margin-right: 1rem;
+  color: var(--color1);
+  font-size: 2.5rem;
 }
