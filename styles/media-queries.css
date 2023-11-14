@@ -1,0 +1,90 @@
+/* Above 640px */
+@media screen and (min-width: 640px) {
+
+  section {
+    padding: 5rem auto;
+  }
+
+  .bahamas {
+      background: url(../assets/bahamas720.jpg);
+    }
+
+  .maldives {
+    background: url(../assets/maldives720.jpg);
+  }
+
+  .okinawa {
+    background: url(../assets/okinawa720.jpg);
+  }
+}
+
+/* Below 792px */
+/* @media screen and (max-width: 792px) {
+  #nav-bar {
+    display: block;
+  }
+} */
+
+/* Above 792px */
+@media screen and (min-width: 792px) {
+  /* Header */
+  #head {
+    display: inline-block;
+    width: 40%;
+  }
+
+  .header-title {
+    text-align: left;
+    margin-left: calc(50px + 2rem);
+  }
+
+  #nav-bar {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: inline-block;
+    padding: .5rem;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    transition: .5s;
+  }
+
+  #touchMenu {
+    display: none;
+  }
+
+  /* Wave Top */
+  .waves-top {
+  }
+
+  /* Form */
+  #form {
+    border-radius: 16px;
+  }
+}
+
+
+/* Above 980px */
+@media screen and (min-width: 980px) {
+  main {
+    max-width: 900px;
+  }
+
+  /* Header */
+  
+
+  /* Features */
+  .features-grid {
+    grid-auto-flow: column;
+  }
+
+  /* Pricing */
+  .place-container {
+    grid-auto-flow: column;
+  }
+}

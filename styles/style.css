@@ -11,18 +11,23 @@
 }
 
 /* Hide scrollbar for Chrome, Safari */
-/* ::-webkit-scrollbar {
+ ::-webkit-scrollbar {
   display: none;
-} */
+}
 
 html {
-  /* scrollbar-width: none; Hide scrollbar for Firefox */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
   font-size: 10px;
 }
 
 body {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -32,7 +37,6 @@ body {
 
 #head{
   width: 100%;
-  height: 7rem;
 }
 
 #header-img {
@@ -73,12 +77,14 @@ body {
 
 .nav-link {
   display: block;
+  text-align: center;
   width: fit-content;
   margin: 0 auto;
-  padding: 1rem;
+  padding-top: 2rem;
   color: var(--color1);
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -87,10 +93,12 @@ body {
 section {
   width: 100%;
   padding: 1rem;
+  padding-bottom: 0;
 }
 
 h2 {
   margin-bottom: 1rem;
+  color: var(--color2);
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
@@ -133,14 +141,28 @@ h3 {
 
 /* About */
 iframe {
-  margin-top: 1rem;
+  display: block;
+  margin: 3rem auto;
+  min-width: 250px;
   width: 100%;
-  height: 100%;
+  max-width: 720px;
+  max-height: 480px;
 }
 
 /* Features */
+.features-grid {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
 .features-div {
   margin-top: 3rem;
+  min-width: 280px;
+  width: 100%;
+  max-height: 480px;
+  margin: 0 auto;
 }
 
 .features-title {
@@ -155,28 +177,33 @@ iframe {
 }
 
 .partnership::after {
-  content: url(assets/partner30.png);
+  content: url(../assets/partner30.png);
 }
 
 .satisfaction::after {
-  content: url(assets/thumbs-up30.png);
+  content: url(../assets/thumbs-up30.png);
 }
 
 .journey::after {
-  content: url(assets/ship30.png);
+  content: url(../assets/ship30.png);
 }
 /* Pricing */
 .place-container {
-  margin: 3rem 0;
   display: grid;
-  grid-auto-columns: auto;
-  grid-auto-rows: auto;
-  gap: 1rem;
+  grid-auto-flow: row;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem 0;
 }
 
 .place-item {
-  margin-bottom: 1rem;
+  margin: 0 auto;
+  min-width: 280px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 300px;
   height: 500px;
+  max-height: 480px;
   text-align: center;
   color: var(--color1);
 }
@@ -193,13 +220,13 @@ iframe {
 }
 
 .bahamas {
-  background: url(assets/bahamas640.jpg);
+  background: url(../assets/bahamas640.jpg);
 }
 .maldives {
-  background: url(assets/maldives640.jpg);
+  background: url(../assets/maldives640.jpg);
 }
 .okinawa {
-  background: url(assets/okinawa640.jpg);
+  background: url(../assets/okinawa640.jpg);
 }
 
 .place-text {
@@ -213,6 +240,23 @@ iframe {
 
 .place-price {
   padding-top: 1rem;
+}
+
+/* Contact */
+.contact-title {
+  color: var(--color2);
+}
+
+.contact {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.contact-link{
+  color: black;
+  text-decoration: none;
 }
 
 /* Form */
@@ -239,8 +283,9 @@ iframe {
 
 #email {
   display: inline-block;
-  width: 100%;
   width: 80%;
+  min-width: 200px;
+  max-width: 500px;
   height: 2rem;
   margin: .5rem 0;
   padding: 2rem 1rem;
@@ -265,7 +310,7 @@ button {
 }
 
 #footer {
-  height: auto;
+  max-height: 500px;
   color: var(--color1);
   background-color: var(--color2);
 }
