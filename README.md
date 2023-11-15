@@ -10,7 +10,7 @@
 <h3 align="center">Blue Travel | Product Landing Page</h3>
 
   <p align="center">
-    A travel agency webpage
+    A travel agency webpage ✈️
     <br />
     <br />
     <a href="https://adrianogtl.github.io/freecodecamp-product-landing-page/">View Demo</a>
@@ -48,12 +48,6 @@
 ![Screecast][screencast]
 
 
-### Built With
-
-* [GitHub Pages][github-pages]
-* [GIMP][gimp-url]
-
-
 <!-- LICENSE -->
 ## License
 
@@ -69,11 +63,11 @@ Adriano Garcia - [adrianogtlopes@gmail.com](mailto:adrianogtlopes@gmail.com)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* Icons and fonts from [Google ][google-url]
+* Icons and fonts from [Google][google-url]
 * Icons by [icons8][icons8-url] and [ionicons][ionicons-url]
 * Photos by [Allen Dewberry Jr][img1], [Colin Watts][img2], [Vladimir Haltakov][img3]
 
-<p align="right"><a href="#readme-top">back to top</a></p>
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
 
 
 
