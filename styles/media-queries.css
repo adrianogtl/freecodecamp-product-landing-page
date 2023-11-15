@@ -16,17 +16,38 @@
   .okinawa {
     background: url(../assets/okinawa720.jpg);
   }
-}
 
-/* Below 792px */
-/* @media screen and (max-width: 792px) {
-  #nav-bar {
-    display: block;
+  /* Features and Pricing */
+  .features-grid,
+  .place-container {
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    gap: 2rem;
   }
-} */
+
+  .features-div:nth-child(2),
+  .place-item:nth-child(2) {
+    
+  }
+
+  /* Contact */
+  .contact {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
+
+  /* Form */
+  #form {
+    border-radius: 16px;
+  }
+}
 
 /* Above 792px */
 @media screen and (min-width: 792px) {
+  .text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
   /* Header */
   #head {
     display: inline-block;
@@ -39,13 +60,13 @@
   }
 
   #nav-bar {
-    display: inline-block;
+    display: block;
     text-align: center;
   }
 
   .nav-link {
     display: inline-block;
-    padding: .5rem;
+    padding-right: .5rem;
   }
 
   .nav-link:hover {
@@ -58,13 +79,32 @@
     display: none;
   }
 
-  /* Wave Top */
-  .waves-top {
+  /* About */
+  #about-container {
+    margin: 0 auto 5rem auto;
   }
 
-  /* Form */
-  #form {
-    border-radius: 16px;
+  /* Pricing */
+  .place-text {
+    font-size: 1.8rem;
+  }
+  
+  /* Footer */
+  .footer-top {
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+  }
+
+  .footer-link {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+
+  .copyright {
+    font-size: 1.5rem;
   }
 }
 
@@ -72,19 +112,26 @@
 /* Above 980px */
 @media screen and (min-width: 980px) {
   main {
-    max-width: 900px;
+    max-width: 1200px;
   }
 
-  /* Header */
-  
+  iframe {
+    max-width: 1080px;
+    height: 720px;
+  }
 
   /* Features */
-  .features-grid {
-    grid-auto-flow: column;
+  section:nth-child(2) {
+    margin-top: 8rem;
   }
 
-  /* Pricing */
-  .place-container {
-    grid-auto-flow: column;
+  /* Features and Pricing */
+  .features-grid, .place-container {
+    grid-template-rows: unset;
+    gap: 5rem;
+  }
+
+  .place-text, .place-image, #form {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   }
 }
