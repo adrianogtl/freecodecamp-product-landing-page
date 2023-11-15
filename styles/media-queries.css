@@ -3,6 +3,8 @@
 
   section {
     padding: 5rem auto;
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   .bahamas {
@@ -15,19 +17,6 @@
 
   .okinawa {
     background: url(../assets/okinawa720.jpg);
-  }
-
-  /* Features and Pricing */
-  .features-grid,
-  .place-container {
-    grid-auto-flow: column;
-    grid-template-rows: auto auto;
-    gap: 2rem;
-  }
-
-  .features-div:nth-child(2),
-  .place-item:nth-child(2) {
-    
   }
 
   /* Contact */
@@ -44,6 +33,10 @@
 
 /* Above 792px */
 @media screen and (min-width: 792px) {
+  section {
+    margin-bottom: 3rem;
+  }
+
   .text {
     font-size: 1.8rem;
     line-height: 2.8rem;
@@ -108,30 +101,33 @@
   }
 }
 
-
 /* Above 980px */
 @media screen and (min-width: 980px) {
-  main {
+  main,
+  section {
     max-width: 1200px;
+  }
+  
+  /* Features */
+  section:nth-child(2) {
+    margin-top: 8rem;
   }
 
   iframe {
     max-width: 1080px;
     height: 720px;
   }
-
-  /* Features */
-  section:nth-child(2) {
-    margin-top: 8rem;
-  }
+  
 
   /* Features and Pricing */
-  .features-grid, .place-container {
-    grid-template-rows: unset;
+  .features-grid,
+  .place-container {
     gap: 5rem;
   }
 
-  .place-text, .place-image, #form {
+  .place-text,
+  .place-image,
+  #form {
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   }
 }
