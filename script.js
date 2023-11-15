@@ -18,4 +18,9 @@ function changeLayout() {
   } else {
     navBar.style.display = "none"
   }
+
+  if (window.innerWidth > window.innerHeight || window.innerWidth < window.innerHeight) {
+    navBtn.textContent = "menu"
+  }
 }
+

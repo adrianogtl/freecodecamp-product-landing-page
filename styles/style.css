@@ -198,6 +198,7 @@ iframe {
 .journey::after {
   content: url(../assets/ship30.png);
 }
+
 /* Pricing */
 .place-container {
   max-width: 1200px;
