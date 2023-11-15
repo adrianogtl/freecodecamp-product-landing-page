@@ -188,17 +188,16 @@ iframe {
 }
 
 .partnership::after {
-  content: url(../assets/partner30.png);
+  content: url(../assets/partner.png);
 }
 
 .satisfaction::after {
-  content: url(../assets/thumbs-up30.png);
+  content: url(../assets/thumbs-up.png);
 }
 
 .journey::after {
-  content: url(../assets/ship30.png);
+  content: url(../assets/ship.png);
 }
-
 /* Pricing */
 .place-container {
   max-width: 1200px;
@@ -229,13 +228,13 @@ iframe {
 }
 
 .bahamas {
-  background: url(../assets/bahamas640.jpg);
+  background: url(../assets/bahamas.jpg);
 }
 .maldives {
-  background: url(../assets/maldives640.jpg);
+  background: url(../assets/maldives.jpg);
 }
 .okinawa {
-  background: url(../assets/okinawa640.jpg);
+  background: url(../assets/okinawa.jpg);
 }
 
 .place-text {

@@ -6,19 +6,7 @@
     max-width: 720px;
     margin: 0 auto;
   }
-
-  .bahamas {
-      background: url(../assets/bahamas720.jpg);
-    }
-
-  .maldives {
-    background: url(../assets/maldives720.jpg);
-  }
-
-  .okinawa {
-    background: url(../assets/okinawa720.jpg);
-  }
-
+  
   /* Contact */
   .contact {
     margin-top: 3rem;
@@ -126,6 +114,11 @@
   .features-div {
     max-width: 500px;
   }
+
+  .features-grid,
+  .place-container {
+    gap: 5rem;
+  }
   /* --------------------- */
   
   /* Features */
@@ -136,12 +129,6 @@
   iframe {
     max-width: 1080px;
     height: 720px;
-  }
-
-  /* Features and Pricing */
-  .features-grid,
-  .place-container {
-    gap: 5rem;
   }
 
   .place-text,
